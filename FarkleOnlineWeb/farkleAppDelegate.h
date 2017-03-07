@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface farkleAppDelegate : UIResponder <UIApplicationDelegate>
+@interface farkleAppDelegate : UIResponder <UIApplicationDelegate> {
+    NSMutableDictionary *userPermissions;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) NSMutableDictionary *userPermissions;
 
 @end
